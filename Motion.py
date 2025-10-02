@@ -7,7 +7,7 @@ pygame.init()
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("2D 瑪利歐 - 專案一")
+pygame.display.set_caption("2D Mario, File1")
 
 # COLOR
 BLACK = (0, 0, 0)
@@ -18,7 +18,7 @@ try:
     player_image = pygame.image.load('mario.png').convert_alpha()
     player_image = pygame.transform.scale(player_image, (50, 50)) 
 except pygame.error as e:
-    print("錯誤：找不到 mario.png 圖片，請確認檔案是否存在。")
+    print("Error, no photos")
     player_image = pygame.Surface((50, 50))
     player_image.fill(WHITE) 
 
